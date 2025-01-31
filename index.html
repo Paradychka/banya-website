@@ -38,6 +38,7 @@
     <section id="services" class="section">
         <div class="container">
             <h2>Послуги</h2>
+             <img src="1aa9f502-bbb6-4b3b-ab0a-4199fb891f68" alt="Баня" style="width:100%; height:auto;">
             <ul>
                 <li><i class="fas fa-hourglass-half"></i> Оренда бані на годину</li>
                 <li><i class="fas fa-spa"></i> Масажні послуги</li>
@@ -60,6 +61,22 @@
             </form>
         </div>
     </section>
+    <script>
+function initMap() {
+    var location = {lat: 48.324807 lng: 23.197804}; 
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: location
+    });
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+}
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
 
     <footer>
         <div class="container">
@@ -75,3 +92,14 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+<section id="why-choose-us" class="section">
+    <div class="container">
+        <h2>Чому обирають нас</h2>
+        <ul>
+            <li>Сучасне обладнання</li>
+            <li>Досвідчені фахівці</li>
+            <li>Доступні ціни</li>
+            <li>Зручне розташування</li>
+        </ul>
+    </div>
+</section>

@@ -31,6 +31,7 @@
     <section id="about" class="section">
         <div class="container">
             <h2>Про нас</h2>
+            <img src="https://github.com/Paradychka/banya-website/blob/main/1aa9f502-bbb6-4b3b-ab0a-4199fb891f68.jpg" alt="Баня" style="width:100%; height:auto;">
             <p>Ласкаво просимо до нашої бані! Ми пропонуємо затишну атмосферу та найкращий відпочинок. Наша баня оснащена всім необхідним для вашого комфорту та релаксації.</p>
         </div>
     </section>
@@ -38,7 +39,6 @@
     <section id="services" class="section">
         <div class="container">
             <h2>Послуги</h2>
-             <img src="1aa9f502-bbb6-4b3b-ab0a-4199fb891f68" alt="Баня" style="width:100%; height:auto;">
             <ul>
                 <li><i class="fas fa-hourglass-half"></i> Оренда бані на годину</li>
                 <li><i class="fas fa-spa"></i> Масажні послуги</li>
@@ -47,9 +47,22 @@
         </div>
     </section>
 
+    <section id="why-choose-us" class="section">
+        <div class="container">
+            <h2>Чому обирають нас</h2>
+            <ul>
+                <li>Сучасне обладнання</li>
+                <li>Досвідчені фахівці</li>
+                <li>Доступні ціни</li>
+                <li>Зручне розташування</li>
+            </ul>
+        </div>
+    </section>
+
     <section id="contact" class="section">
         <div class="container">
             <h2>Контакти</h2>
+            <p>Зв'яжіться з нами за номером: +3800000000</p>
             <form id="contactForm">
                 <label for="name">Ім'я:</label>
                 <input type="text" id="name" name="name" required>
@@ -59,24 +72,9 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Надіслати</button>
             </form>
+            <div id="map" style="height: 400px; width: 100%;"></div>
         </div>
     </section>
-    <script>
-function initMap() {
-    var location = {lat: 48.324807 lng: 23.197804}; 
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: location
-    });
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
-}
-</script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
 
     <footer>
         <div class="container">
@@ -92,14 +90,3 @@ function initMap() {
     <script src="scripts.js"></script>
 </body>
 </html>
-<section id="why-choose-us" class="section">
-    <div class="container">
-        <h2>Чому обирають нас</h2>
-        <ul>
-            <li>Сучасне обладнання</li>
-            <li>Досвідчені фахівці</li>
-            <li>Доступні ціни</li>
-            <li>Зручне розташування</li>
-        </ul>
-    </div>
-</section>

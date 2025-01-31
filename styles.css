@@ -40,10 +40,18 @@ nav ul li a {
 }
 
 #hero {
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    background: url('https://github.com/Paradychka/banya-website/blob/main/1aa9f502-bbb6-4b3b-ab0a-4199fb891f68.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
     text-align: center;
+}
+
+#hero h2,
+#hero p {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .section {
@@ -115,4 +123,15 @@ footer a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+#map {
+    margin-top: 20px;
 }
